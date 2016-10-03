@@ -25,8 +25,8 @@ var TodoApp = React.createClass({
       ]
     };
   },
-  handleAddTodo: function (text) {
-    alert('new todo' + text);
+  handleAddTodo: function (todoText) {
+    alert('new todo' + todoTexttext);
   },
   handleSearch: function (showCompleted, searchText) {
     this.setState({

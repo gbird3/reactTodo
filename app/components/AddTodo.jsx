@@ -4,8 +4,8 @@ var AddTodo = React.createClass({
   handleSubmit: function (e) {
     e.preventDefault();
     var todoText = this.refs.todoText.value;
-    if(text.lenght > 0){
-      this.refs.todo.value = '';
+    if(todoText.length > 0){
+      this.refs.todoText.value = '';
       this.props.onAddItem(todoText);
     } else {
       this.refs.todoText.focus();
