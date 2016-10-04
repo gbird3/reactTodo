@@ -18,15 +18,15 @@ var person = ['Andrew', 25];
 var personTwo = ['Jen', 29];
 
 function hello (name, age) {
-   console.log('Hi'  + name + ', you are ' + age)
+   console.log('Hi '  + name + ', you are ' + age)
 }
 
 hello(...person);
 hello(...personTwo)
 
-var names  ['Mike', 'Ben'];
+var names = ['Mike', 'Ben'];
 var final = ['Andrew', ...names];
 
-final.ForEach(function (name) {
-  console.log('Hi' + name);
+final.forEach(function (name) {
+  console.log('Hi ' + name);
 });
