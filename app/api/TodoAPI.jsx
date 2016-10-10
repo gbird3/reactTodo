@@ -34,7 +34,7 @@ module.exports = {
       var text = todo.text.toLowerCase();
       return searchText.length === 0 || text.indexOf(searchText) > -1;
     });
-    //sort todos with non completed first
+    //sort todos with non-completed first
     filteredTodos.sort((a, b) => {
       if (a.completed && b.completed) {
         return -1;
