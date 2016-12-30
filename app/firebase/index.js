@@ -2,11 +2,11 @@ import firebase from 'firebase';
 
 try {
   var config = {
-    apiKey: "AIzaSyAMw5Z8zeFioA7G0XE3fUQqozV0Kl4gZf8",
-    authDomain: "bird-todo-app.firebaseapp.com",
-    databaseURL: "https://bird-todo-app.firebaseio.com",
-    storageBucket: "bird-todo-app.appspot.com",
-    messagingSenderId: "257354093884"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.DATABASE_URL,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID
   };
 
   firebase.initializeApp(config);
