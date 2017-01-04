@@ -6,7 +6,9 @@
   "scripts": {
     "test": "SET NODE_ENV=test&& karma start",
     "build": "webpack",
-    "start": "npm run build && node server.js"
+    "start": "npm run build && node server.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "Greg Bird",
   "license": "MIT",
@@ -48,6 +50,7 @@
     "karma-mocha-reporter": "^2.0.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "@kadira/storybook": "^2.21.0"
   }
 }
